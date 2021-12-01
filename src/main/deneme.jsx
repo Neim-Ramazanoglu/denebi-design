@@ -5,7 +5,8 @@ import denebi from "../assets/denebi.png"
 import navi from "../assets/Business decisions-amico.png"
 import denebi3 from "../assets/denebi3.png"
 import { NavLink } from 'react-router-dom';
-
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
 
 export default class Deneme extends Component {
     render() {
@@ -28,44 +29,27 @@ export default class Deneme extends Component {
                     <div className="sub-title text-center">
                         İşletmen için en iyi kampanya stratejisini seçelim
                     </div>
-                    <div className="button-container text-center">
-                        <div className="button">
-                            <span className="dot-l" />
-                            <div className="button-text">
-                                <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
-                                    Kampanyalar
-                                </NavLink>
-                            </div>
-                            <span className="dot-r" />
-                        </div>
-                        <div className="button">
-                            <span className="dot-l" />
-                            <div className="button-text">
-                                <NavLink to="/ilanlar" style={{ textDecoration: "none", color: "white" }}>
-                                    El İlanları
-                                </NavLink>
-                            </div>
-                            <span className="dot-r" />
-                        </div>
-                        <div className="button">
-                            <span className="dot-l" />
-                            <div className="button-text">
-                                <NavLink to="/cekilis" style={{ textDecoration: "none", color: "white" }}>
-                                    Çekilişler
-                                </NavLink>
-                            </div>
-                            <span className="dot-r" />
-                        </div>
-                        <div className="button">
-                            <span className="dot-l" />
-                            <div className="button-text">
-                                <NavLink to="/test" style={{ textDecoration: "none", color: "white" }}>
-                                    Test Ürünleri
-                                </NavLink>
-                            </div>
-                            <span className="dot-r" />
-                        </div>
-
+                    <div className="button-container">
+                        <AwesomeButton type="primary" size="large" style={{ display: "flex" }}>
+                            <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
+                                Kampanyalar
+                            </NavLink>
+                        </AwesomeButton>
+                        <AwesomeButton type="primary" size="large" style={{ display: "flex", marginTop: "1vh" }}>
+                            <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
+                                El İlanları
+                            </NavLink>
+                        </AwesomeButton>
+                        <AwesomeButton type="primary" size="large" style={{ display: "flex", marginTop: "1vh" }}>
+                            <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
+                                Çekilişler
+                            </NavLink>
+                        </AwesomeButton>
+                        <AwesomeButton type="primary" size="large" style={{ display: "flex", marginTop: "1vh" }}>
+                            <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
+                                Test Ürünleri
+                            </NavLink>
+                        </AwesomeButton>
                     </div>
                     <div className="text-center">
                         <img className="footer " src={denebi3} />
