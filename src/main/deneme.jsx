@@ -36,17 +36,17 @@ export default class Deneme extends Component {
                             </NavLink>
                         </AwesomeButton>
                         <AwesomeButton type="primary" size="large" style={{ display: "flex", marginTop: "1vh" }}>
-                            <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
+                            <NavLink to="/ilanlar" style={{ textDecoration: "none", color: "white" }}>
                                 El İlanları
                             </NavLink>
                         </AwesomeButton>
                         <AwesomeButton type="primary" size="large" style={{ display: "flex", marginTop: "1vh" }}>
-                            <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
+                            <NavLink to="/cekilis" style={{ textDecoration: "none", color: "white" }}>
                                 Çekilişler
                             </NavLink>
                         </AwesomeButton>
                         <AwesomeButton type="primary" size="large" style={{ display: "flex", marginTop: "1vh" }}>
-                            <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
+                            <NavLink to="/test" style={{ textDecoration: "none", color: "white" }}>
                                 Test Ürünleri
                             </NavLink>
                         </AwesomeButton>
