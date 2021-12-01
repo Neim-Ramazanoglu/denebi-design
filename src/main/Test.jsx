@@ -41,6 +41,11 @@ export default class Test extends Component {
                             Başka bir seçim dene
                         </NavLink>
                     </div>
+                    <div className="single-button text-center mt-2" >
+                        <NavLink to="/kampanya" style={{ textDecoration: "none", color: "white" }}>
+                            Kampanya Oluştur
+                        </NavLink>
+                    </div>
 
                     <div className="text-center">
                         <img className="footer " src={denebi3} />

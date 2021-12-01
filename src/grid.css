@@ -4,8 +4,10 @@ body{
     color:white;
     margin:0px;
     overflow-x: hidden;  
-    overflow-y: hidden;  
-  }
+    overflow-y: hidden; 
+    background-color: #524091;
+
+}
 .left{
     background-color: white;
     
@@ -14,13 +16,13 @@ body{
     background-color: #524091;
     height: 100vh;
 
-  }
-  .header{
+}
+.header{
     font-size: 10vh;
     margin-top: 2vh;
     height: 15vh;
-  }
-  .sub-title{
+}
+.sub-title{
     font-size: 3vh;
     height: 20vh;
 }
@@ -112,3 +114,51 @@ body{
     width: 15vh;
 }
 
+.emoji{
+    height: 15vh;
+    width: 15vh;
+margin-top: 5vh;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .phone{
+        width: 40vh; 
+        height:55vh; 
+        background-color: white;
+        display: inline-block; 
+        align-self: flex-end;
+        margin-left: auto;
+        margin-right: auto; 
+        border-top-right-radius: 7vh; 
+        border-top-left-radius: 7vh; 
+        color: #524091; 
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    .phone{
+        width: 40vh; 
+        height:75vh; 
+        background-color: white;
+        display: inline-block; 
+        align-self: flex-end;
+        margin-left: auto;
+        margin-right: auto; 
+        border-top-right-radius: 7vh; 
+        border-top-left-radius: 7vh; 
+        color: #524091; 
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .phone{
+        width: 40vh; 
+        height:55vh; 
+        background-color: white;
+        display: inline-block; 
+        align-self: flex-end;
+        margin-left: auto;
+        margin-right: auto; 
+        border-top-right-radius: 7vh; 
+        border-top-left-radius: 7vh; 
+        color: #524091; 
+    }
+}

@@ -12,6 +12,7 @@ import Ilan from './main/Ilan';
 import Cekilis from './main/Cekilis';
 import Test from './main/Test';
 import Index from "./Index.jsx"
+import KampanyaEkranı from './main/KampanyaEkranı';
 
 
 function index() {
@@ -25,8 +26,7 @@ function index() {
                     <Route path="/ilanlar" element={<Ilan />} />
                     <Route path="/cekilis" element={<Cekilis />} />
                     <Route path="/test" element={<Test />} />
-
-
+                    <Route path="/kampanya" element={<KampanyaEkranı />} />
                 </Routes>
             </Router>
         </div>
