@@ -9,31 +9,78 @@ import denebi3 from "../assets/denebi3.png"
 export default class Deneme extends Component {
     render() {
         return <>
-            {/* <div style={{ margin: "auto", width: "50%" }}>
-                <IPhone6Plus width={300} orientation='portrait' color='black' buttonProps={{
-                    onClick: () => alert('Home Button Clicked!')
-                }}>
-                    <div style={{ backgroundColor: "white", width: '100%', height: '100%', margin: 0 }}>
-                        <div style={{ paddingTop: "40px" }}>içerisine istediğimiz şeyi</div>
-                        <div> ekleyebiliriz </div>
-                        <div style={{ paddingTop: "40px" }}> {emo} </div>
+            <div className="row">
+                <div className="col-3 left" >
+                    <div className="row">
+                        <img src={denebi} />
                     </div>
-                </IPhone6Plus >
-            </div > */}
-
-            <div className="left">
-                <div className="svg-denebi">
-                    <img style={{ maxWidth: "100%" }} src={denebi} />
+                    <div className="row">
+                        <img src={navi} />
+                    </div>
                 </div>
-
-                <div >
-                    <img style={{ maxWidth: "100%" }} src={navi} />
+                <div className="col-9 right " >
+                    <div className="header text-center">
+                        Seçim
+                    </div>
+                    <div className="sub-title text-center">
+                        İşletmen için en iyi kampanya stratejisini seçelim
+                    </div>
+                    <div className="button-container text-center">
+                        <div className="button">
+                            <span className="dot-l" />
+                            <div className="button-text">
+                                Kampanyalar
+                            </div>
+                            <span className="dot-r" />
+                        </div>
+                        <div className="button">
+                            <span className="dot-l" />
+                            <div className="button-text">
+                                El İlanları
+                            </div>
+                            <span className="dot-r" />
+                        </div>
+                        <div className="button">
+                            <span className="dot-l" />
+                            <div className="button-text">
+                                Çekilişler
+                            </div>
+                            <span className="dot-r" />
+                        </div>
+                        <div className="button">
+                            <span className="dot-l" />
+                            <div className="button-text">
+                                Test Ürünleri
+                            </div>
+                            <span className="dot-r" />
+                        </div>
+                    </div>
+                    <div className="text-center">
+                        <img className="footer " src={denebi3} />
+                    </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/*            
             <div className="right">
-                <div className="header">
-                    Seçim
-                </div>
+                
                 <div className="sub-title">
                     İşletmen için en iyi kampanya stratejisini seçelim
                 </div>
@@ -70,7 +117,7 @@ export default class Deneme extends Component {
 
                 <img className="footer" src={denebi3} />
 
-            </div>
+            </div> */}
         </>
     }
 }

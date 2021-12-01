@@ -1,0 +1,77 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color:white;
+    margin:0px;
+  }
+.left{
+    background-color: white;
+    
+}
+.right{
+    background-color: #9235A4;
+    height: 100vh;
+
+  }
+  .header{
+    font-size: 10vh;
+    margin-top: 2vh;
+    height: 15vh;
+  }
+  .sub-title{
+    font-size: 3vh;
+    height: 20vh;
+}
+.button-container{
+    display: table;
+    margin: 0 auto;
+    padding:1vh;
+    height: 45vh;
+
+  }
+  .button{
+    outline: solid 0.3vh white;
+    outline-offset:1vh; 
+    border-radius: 5vh;
+    width: 23vh;
+    margin-bottom: 4vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dot-l{
+    height: 1.5vh;
+    width: 1.5vh;
+    border-radius: 5vh;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    outline: solid 0.3vh white;
+    outline-offset:0.6vh;   
+    margin-top: 0.7vh;
+    margin-left: 0.55vh;
+  }
+  .dot-r{
+    height: 1.5vh;
+    width: 1.5vh;
+    border-radius: 5vh;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    outline: solid 0.3vh white;
+    outline-offset:0.6vh;   
+    margin-top: 0.7vh;
+    margin-right: 0.55vh;
+  }
+  .button-text{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2vh;
+    margin-bottom: 0px;
+  }
+  .footer {
+    clear: both;
+    position: relative;
+    height: 15vh;
+    width: 15vh;
+}
