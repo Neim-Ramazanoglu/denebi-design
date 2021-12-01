@@ -10,21 +10,9 @@ export default class KampanyaEkranı extends Component {
         progress: 30
     };
     handleSlide = newProgress => this.setState({ progress: newProgress });
-    state1 = {
-        progress1: 30
-    };
-    handleSlide1 = newProgress1 => this.setState({ progress1: newProgress1 });
-    state2 = {
-        progress2: 20
-    };
-    handleSlide2 = newProgress2 => this.setState({ progress2: newProgress2 });
-    state3 = {
-        progress3: 30
-    };
-    handleSlide3 = newProgress3 => this.setState({ progress3: newProgress3 });
+
     render() {
-        console.log(this.state);
-        console.log(this.state1);
+
 
 
 
@@ -59,12 +47,11 @@ export default class KampanyaEkranı extends Component {
                                 <MultiSlider
                                     height={18}
                                     slidableZoneSize={36}
-                                    onSlide={this.handleSlide1}
+                                    onSlide={this.handleSlide}
                                     roundedCorners
                                     className="mb-3"
-
                                 >
-                                    <Progress color="#524091" progress={this.state1.progress1}>
+                                    <Progress color="#524091" progress={this.state.progress}>
                                         <Dot color="#806bc7" />
                                     </Progress>
                                 </MultiSlider>
@@ -73,12 +60,11 @@ export default class KampanyaEkranı extends Component {
                                 <MultiSlider
                                     height={18}
                                     slidableZoneSize={36}
-                                    onSlide={this.handleSlide2}
+                                    onSlide={this.handleSlide}
                                     roundedCorners
                                     className="mb-3"
-
                                 >
-                                    <Progress color="#524091" progress={this.state2.progress2}>
+                                    <Progress color="#524091" progress={this.state.progress}>
                                         <Dot color="#806bc7" />
                                     </Progress>
                                 </MultiSlider>
@@ -87,12 +73,11 @@ export default class KampanyaEkranı extends Component {
                                 <MultiSlider
                                     height={18}
                                     slidableZoneSize={36}
-                                    onSlide={this.handleSlide3}
+                                    onSlide={this.handleSlide}
                                     roundedCorners
                                     className="mb-3"
-
                                 >
-                                    <Progress color="#524091" progress={this.state3.progress3}>
+                                    <Progress color="#524091" progress={this.state.progress}>
                                         <Dot color="#806bc7" />
                                     </Progress>
                                 </MultiSlider>
