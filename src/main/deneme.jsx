@@ -4,6 +4,7 @@ import { IPhone6Plus } from 'react-device-mockups';
 import denebi from "../assets/denebi.png"
 import navi from "../assets/Business decisions-amico.png"
 import denebi3 from "../assets/denebi3.png"
+import { NavLink } from 'react-router-dom';
 
 
 export default class Deneme extends Component {
@@ -29,28 +30,36 @@ export default class Deneme extends Component {
                         <div className="button">
                             <span className="dot-l" />
                             <div className="button-text">
-                                Kampanyalar
+                                <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
+                                    Kampanyalar
+                                </NavLink>
                             </div>
                             <span className="dot-r" />
                         </div>
                         <div className="button">
                             <span className="dot-l" />
                             <div className="button-text">
-                                El İlanları
+                                <NavLink to="/ilanlar" style={{ textDecoration: "none", color: "white" }}>
+                                    El İlanları
+                                </NavLink>
                             </div>
                             <span className="dot-r" />
                         </div>
                         <div className="button">
                             <span className="dot-l" />
                             <div className="button-text">
-                                Çekilişler
+                                <NavLink to="/cekilis" style={{ textDecoration: "none", color: "white" }}>
+                                    Çekilişler
+                                </NavLink>
                             </div>
                             <span className="dot-r" />
                         </div>
                         <div className="button">
                             <span className="dot-l" />
                             <div className="button-text">
-                                Test Ürünleri
+                                <NavLink to="/test" style={{ textDecoration: "none", color: "white" }}>
+                                    Test Ürünleri
+                                </NavLink>
                             </div>
                             <span className="dot-r" />
                         </div>

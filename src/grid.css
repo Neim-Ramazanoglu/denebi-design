@@ -27,17 +27,42 @@ body{
     margin: 0 auto;
     padding:1vh;
     height: 45vh;
-
   }
   .button{
-    outline: solid 0.3vh white;
-    outline-offset:1vh; 
+    border: solid 0.3vh white;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-inline: 1vh;
     border-radius: 5vh;
-    width: 23vh;
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+  }
+  .button:hover{
+    border: solid 0.3vh white;
+    background-color: #F7D713;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-inline: 1vh;
+    border-radius: 5vh;
+    margin-bottom: 3vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .single-button{
+    display: table;
+    margin: 0 auto;
+    border: 1px solid #F7D713; 
+    padding-inline: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: #F7D713;
+    border-radius: 5vh;
+    font-size: 2vh;
+    cursor: pointer;
+    
   }
   .dot-l{
     height: 1.5vh;
@@ -49,7 +74,6 @@ body{
     outline: solid 0.3vh white;
     outline-offset:0.6vh;   
     margin-top: 0.7vh;
-    margin-left: 0.55vh;
   }
   .dot-r{
     height: 1.5vh;
@@ -61,13 +85,13 @@ body{
     outline: solid 0.3vh white;
     outline-offset:0.6vh;   
     margin-top: 0.7vh;
-    margin-right: 0.55vh;
   }
   .button-text{
     display: inline-block;
     vertical-align: middle;
     font-size: 2vh;
     margin-bottom: 0px;
+    margin-inline: 2vh;
   }
   .footer {
     clear: both;
