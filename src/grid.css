@@ -3,13 +3,15 @@ body{
     font-weight: 600;
     color:white;
     margin:0px;
+    overflow-x: hidden;  
+    overflow-y: hidden;  
   }
 .left{
     background-color: white;
     
 }
 .right{
-    background-color: #9235A4;
+    background-color: #524091;
     height: 100vh;
 
   }
@@ -38,9 +40,10 @@ body{
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    transition: 1s;
   }
   .button:hover{
-    border: solid 0.3vh white;
+    border: solid 0.3vh #F7D713;
     background-color: #F7D713;
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
@@ -51,6 +54,15 @@ body{
     display: flex;
     justify-content: space-between;
   }
+  .button:hover .dot-l{
+    opacity:0;
+    transition: 1s;
+
+  }
+  .button:hover .dot-r{
+    opacity:0;
+    transition: 1s;
+}
   .single-button{
     display: table;
     margin: 0 auto;
@@ -99,3 +111,4 @@ body{
     height: 15vh;
     width: 15vh;
 }
+

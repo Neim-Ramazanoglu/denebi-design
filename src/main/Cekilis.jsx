@@ -11,15 +11,17 @@ export default class Cekilis extends Component {
     render() {
         return <>
             <div className="row">
-                <div className="col-3 left" >
-                    <div className="row">
-                        <img src={denebi} />
-                    </div>
-                    <div className="row">
-                        <img src={navi} />
+                <div className="col-4 left" >
+                    <div className="col-9" style={{ marginLeft: "8vh" }}>
+                        <div className="row" style={{ height: "40vh" }} >
+                            <img src={denebi} />
+                        </div>
+                        <div className="row">
+                            <img src={navi} />
+                        </div>
                     </div>
                 </div>
-                <div className="col-9 right " >
+                <div className="col-8 right " >
                     <div className="header text-center">
                         Çekilişler
                     </div>
