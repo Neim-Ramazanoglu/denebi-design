@@ -30,22 +30,22 @@ export default class Deneme extends Component {
                         İşletmen için en iyi kampanya stratejisini seçelim
                     </div>
                     <div className="button-container">
-                        <AwesomeButton type="primary" size="large" style={{ display: "flex" }}>
+                        <AwesomeButton type="primary" style={{ display: "flex", width: "100%" }}>
                             <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
                                 Kampanyalar
                             </NavLink>
                         </AwesomeButton>
-                        <AwesomeButton type="primary" size="large" style={{ display: "flex", marginTop: "1vh" }}>
+                        <AwesomeButton type="primary" style={{ display: "flex", marginTop: "1vh", width: "100%" }}>
                             <NavLink to="/ilanlar" style={{ textDecoration: "none", color: "white" }}>
                                 El İlanları
                             </NavLink>
                         </AwesomeButton>
-                        <AwesomeButton type="primary" size="large" style={{ display: "flex", marginTop: "1vh" }}>
+                        <AwesomeButton type="primary" style={{ display: "flex", marginTop: "1vh", width: "100%" }}>
                             <NavLink to="/cekilis" style={{ textDecoration: "none", color: "white" }}>
                                 Çekilişler
                             </NavLink>
                         </AwesomeButton>
-                        <AwesomeButton type="primary" size="large" style={{ display: "flex", marginTop: "1vh" }}>
+                        <AwesomeButton type="primary" style={{ display: "flex", marginTop: "1vh", width: "100%" }}>
                             <NavLink to="/test" style={{ textDecoration: "none", color: "white" }}>
                                 Test Ürünleri
                             </NavLink>
