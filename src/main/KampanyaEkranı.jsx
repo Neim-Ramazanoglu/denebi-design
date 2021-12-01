@@ -5,12 +5,30 @@ import emoji from "../assets/emoji.png"
 import MultiSlider, { Progress, Dot } from 'react-multi-bar-slider';
 
 export default class KampanyaEkranı extends Component {
+
     state = {
         progress: 30
     };
     handleSlide = newProgress => this.setState({ progress: newProgress });
-
+    state1 = {
+        progress1: 30
+    };
+    handleSlide1 = newProgress1 => this.setState({ progress1: newProgress1 });
+    state2 = {
+        progress2: 20
+    };
+    handleSlide2 = newProgress2 => this.setState({ progress2: newProgress2 });
+    state3 = {
+        progress3: 30
+    };
+    handleSlide3 = newProgress3 => this.setState({ progress3: newProgress3 });
     render() {
+        console.log(this.state);
+        console.log(this.state1);
+
+
+
+
         return <>
             <div style={{ height: "100vh" }}>
                 <div className="header text-center">
@@ -36,42 +54,45 @@ export default class KampanyaEkranı extends Component {
                                         <Dot color="#806bc7" />
                                     </Progress>
                                 </MultiSlider>
+
                                 <span >Denebi Puanı</span>
                                 <MultiSlider
                                     height={18}
                                     slidableZoneSize={36}
-                                    onSlide={this.handleSlide}
+                                    onSlide={this.handleSlide1}
                                     roundedCorners
                                     className="mb-3"
 
                                 >
-                                    <Progress color="#524091" progress={this.state.progress}>
+                                    <Progress color="#524091" progress={this.state1.progress1}>
                                         <Dot color="#806bc7" />
                                     </Progress>
                                 </MultiSlider>
+
                                 <span>Kullanıcı Puanı</span>
                                 <MultiSlider
                                     height={18}
                                     slidableZoneSize={36}
-                                    onSlide={this.handleSlide}
+                                    onSlide={this.handleSlide2}
                                     roundedCorners
                                     className="mb-3"
 
                                 >
-                                    <Progress color="#524091" progress={this.state.progress}>
+                                    <Progress color="#524091" progress={this.state2.progress2}>
                                         <Dot color="#806bc7" />
                                     </Progress>
                                 </MultiSlider>
+
                                 <span>Görüntülenme Sayısı</span>
                                 <MultiSlider
                                     height={18}
                                     slidableZoneSize={36}
-                                    onSlide={this.handleSlide}
+                                    onSlide={this.handleSlide3}
                                     roundedCorners
                                     className="mb-3"
 
                                 >
-                                    <Progress color="#524091" progress={this.state.progress}>
+                                    <Progress color="#524091" progress={this.state3.progress3}>
                                         <Dot color="#806bc7" />
                                     </Progress>
                                 </MultiSlider>
