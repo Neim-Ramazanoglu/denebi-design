@@ -5,7 +5,8 @@ import denebi from "../assets/denebi.png"
 import friendly from "../assets/Friendly handshake-amico.png"
 import denebi3 from "../assets/denebi3.png"
 import { NavLink } from 'react-router-dom';
-
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
 
 export default class Sayfa1 extends Component {
     render() {
@@ -36,10 +37,12 @@ export default class Sayfa1 extends Component {
                         müşteri getirmek istiyorsan doğru yerdesin.
                     </div>
 
-                    <div className="single-button text-center" >
-                        <NavLink to="/secim" style={{ textDecoration: "none", color: "white" }}>
-                            Hemen Başla
-                        </NavLink>
+                    <div className="button-container1" >
+                        <AwesomeButton type="primary" style={{ display: "flex" }}>
+                            <NavLink to="/secim" style={{ textDecoration: "none", color: "white" }}>
+                                Hemen Başla
+                            </NavLink>
+                        </AwesomeButton>
                     </div>
 
                     <div className="text-center">

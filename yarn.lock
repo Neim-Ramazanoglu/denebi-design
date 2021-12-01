@@ -9435,6 +9435,11 @@
   "resolved" "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
   "version" "3.0.4"
 
+"react-multi-bar-slider@^1.4.0":
+  "integrity" "sha512-cgQ8Qr+zD0swVKKRqpqYXhN31Mge29oTt/nfJRiju5VlM5bT7tC6nalhr5aBF2y0Ik221Nruh+UUMxrZSwMPUg=="
+  "resolved" "https://registry.npmjs.org/react-multi-bar-slider/-/react-multi-bar-slider-1.4.0.tgz"
+  "version" "1.4.0"
+
 "react-refresh@^0.8.3":
   "integrity" "sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg=="
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"

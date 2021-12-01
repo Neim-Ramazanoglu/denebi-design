@@ -5,7 +5,8 @@ import denebi from "../assets/denebi.png"
 import navi from "../assets/Business decisions-amico.png"
 import denebi3 from "../assets/denebi3.png"
 import { NavLink } from 'react-router-dom';
-
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
 
 export default class Kampanyalar extends Component {
     render() {
@@ -28,7 +29,7 @@ export default class Kampanyalar extends Component {
                     <div className="sub-title text-center">
                         İşletmen için en iyi kampanya stratejisini seçelim
                     </div>
-                    <div className="text-center mx-5" style={{ fontSize: "3vh", height: "43vh" }}>
+                    <div className="text-center mx-5" style={{ fontSize: "3vh", height: "30vh" }}>
                         Hey merhaba, seni aramızda görmekten çok mutlu olduk.
                         Sana hemen kendimizi tanıtmak istiyoruz.
                         Yeni nesil bir dijital reklam ağı olarak senin için
@@ -36,10 +37,19 @@ export default class Kampanyalar extends Component {
                         müşteri getirmek istiyorsan doğru yerdesin.
                     </div>
 
-                    <div className="single-button text-center" >
-                        <NavLink to="/secim" style={{ textDecoration: "none", color: "white" }}>
-                            Başka bir seçim dene
-                        </NavLink>
+                    <div className="button-container1 mb-3" >
+                        <AwesomeButton type="primary" style={{ display: "flex" }}>
+                            <NavLink to="/secim" style={{ textDecoration: "none", color: "white" }}>
+                                Başka bir seçim dene
+                            </NavLink>
+                        </AwesomeButton>
+                    </div>
+                    <div className="button-container1" >
+                        <AwesomeButton type="primary" style={{ display: "flex" }}>
+                            <NavLink to="/kampanya" style={{ textDecoration: "none", color: "white" }}>
+                                Kampanya Oluştur
+                            </NavLink>
+                        </AwesomeButton>
                     </div>
 
                     <div className="text-center">

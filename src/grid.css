@@ -32,6 +32,11 @@ body{
     padding:1vh;
     height: 45vh;
   }
+  .button-container1{
+    display: table;
+    margin: 0 auto;
+   
+  }
   .button{
     border: solid 0.3vh white;
     padding-top: 0.5vh;

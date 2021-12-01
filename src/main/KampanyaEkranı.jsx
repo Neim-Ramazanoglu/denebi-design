@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import 'html5-device-mockups/dist/device-mockups.min.css';
 import { IPhone6Plus } from 'react-device-mockups';
 import emoji from "../assets/emoji.png"
-
+import MultiSlider, { Progress, Dot } from 'react-multi-bar-slider';
 
 export default class KampanyaEkranı extends Component {
+    state = {
+        progress: 30
+    };
+    handleSlide = newProgress => this.setState({ progress: newProgress });
+
     render() {
         return <>
             <div style={{ height: "100vh" }}>
@@ -20,21 +25,57 @@ export default class KampanyaEkranı extends Component {
                             <div className="text-center" style={{ fontSize: "5vh" }}>Başlık</div>
                             <div className="container">
                                 <span>Kaç Gün</span>
-                                <div className="progress mt-2 mb-3">
-                                    <div className="progress-bar" role="progressbar" style={{ width: "25%", backgroundColor: "#524091", borderRadius: "5vh" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>Bütçe</span>
-                                <div className="progress mt-2 mb-3">
-                                    <div className="progress-bar" role="progressbar" style={{ width: "25%", backgroundColor: "#524091", borderRadius: "5vh" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>Bütçe</span>
-                                <div className="progress mt-2 mb-3">
-                                    <div className="progress-bar" role="progressbar" style={{ width: "25%", backgroundColor: "#524091", borderRadius: "5vh" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>Bütçe</span>
-                                <div className="progress mt-2 mb-3">
-                                    <div className="progress-bar" role="progressbar" style={{ width: "25%", backgroundColor: "#524091", borderRadius: "5vh" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
+                                <MultiSlider
+                                    height={18}
+                                    slidableZoneSize={36}
+                                    onSlide={this.handleSlide}
+                                    roundedCorners
+                                    className="mb-3"
+                                >
+                                    <Progress color="#524091" progress={this.state.progress}>
+                                        <Dot color="#806bc7" />
+                                    </Progress>
+                                </MultiSlider>
+                                <span >Denebi Puanı</span>
+                                <MultiSlider
+                                    height={18}
+                                    slidableZoneSize={36}
+                                    onSlide={this.handleSlide}
+                                    roundedCorners
+                                    className="mb-3"
+
+                                >
+                                    <Progress color="#524091" progress={this.state.progress}>
+                                        <Dot color="#806bc7" />
+                                    </Progress>
+                                </MultiSlider>
+                                <span>Kullanıcı Puanı</span>
+                                <MultiSlider
+                                    height={18}
+                                    slidableZoneSize={36}
+                                    onSlide={this.handleSlide}
+                                    roundedCorners
+                                    className="mb-3"
+
+                                >
+                                    <Progress color="#524091" progress={this.state.progress}>
+                                        <Dot color="#806bc7" />
+                                    </Progress>
+                                </MultiSlider>
+                                <span>Görüntülenme Sayısı</span>
+                                <MultiSlider
+                                    height={18}
+                                    slidableZoneSize={36}
+                                    onSlide={this.handleSlide}
+                                    roundedCorners
+                                    className="mb-3"
+
+                                >
+                                    <Progress color="#524091" progress={this.state.progress}>
+                                        <Dot color="#806bc7" />
+                                    </Progress>
+                                </MultiSlider>
+
                             </div>
 
                         </div>
