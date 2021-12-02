@@ -38,18 +38,18 @@ export default class Ilan extends Component {
                     </div>
 
                     <div className="button-container1 mb-3" >
-                        <AwesomeButton type="primary" style={{ display: "flex" }}>
-                            <NavLink to="/secim" style={{ textDecoration: "none", color: "white" }}>
+                        <NavLink to="/secim" style={{ textDecoration: "none", color: "white" }}>
+                            <AwesomeButton type="primary" style={{ display: "flex" }}>
                                 Başka bir seçim dene
-                            </NavLink>
-                        </AwesomeButton>
+                            </AwesomeButton>
+                        </NavLink>
                     </div>
                     <div className="button-container1" >
-                        <AwesomeButton type="primary" style={{ display: "flex" }}>
-                            <NavLink to="/kampanya" style={{ textDecoration: "none", color: "white" }}>
+                        <NavLink to="/kampanya" style={{ textDecoration: "none", color: "white" }}>
+                            <AwesomeButton type="primary" style={{ display: "flex" }}>
                                 Kampanya Oluştur
-                            </NavLink>
-                        </AwesomeButton>
+                            </AwesomeButton>
+                        </NavLink>
                     </div>
 
                     <div className="text-center">

@@ -30,26 +30,26 @@ export default class Deneme extends Component {
                         İşletmen için en iyi kampanya stratejisini seçelim
                     </div>
                     <div className="button-container">
-                        <AwesomeButton type="primary" style={{ display: "flex", width: "100%" }}>
-                            <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
+                        <NavLink to="/kampanyalar" style={{ textDecoration: "none", color: "white" }}>
+                            <AwesomeButton type="primary" style={{ display: "flex", width: "100%" }}>
                                 Kampanyalar
-                            </NavLink>
-                        </AwesomeButton>
-                        <AwesomeButton type="primary" style={{ display: "flex", marginTop: "1vh", width: "100%" }}>
-                            <NavLink to="/ilanlar" style={{ textDecoration: "none", color: "white" }}>
+                            </AwesomeButton>
+                        </NavLink>
+                        <NavLink to="/ilanlar" style={{ textDecoration: "none", color: "white" }}>
+                            <AwesomeButton type="primary" style={{ display: "flex", marginTop: "1vh", width: "100%" }}>
                                 El İlanları
-                            </NavLink>
-                        </AwesomeButton>
-                        <AwesomeButton type="primary" style={{ display: "flex", marginTop: "1vh", width: "100%" }}>
-                            <NavLink to="/cekilis" style={{ textDecoration: "none", color: "white" }}>
+                            </AwesomeButton>
+                        </NavLink>
+                        <NavLink to="/cekilis" style={{ textDecoration: "none", color: "white" }}>
+                            <AwesomeButton type="primary" style={{ display: "flex", marginTop: "1vh", width: "100%" }}>
                                 Çekilişler
-                            </NavLink>
-                        </AwesomeButton>
-                        <AwesomeButton type="primary" style={{ display: "flex", marginTop: "1vh", width: "100%" }}>
-                            <NavLink to="/test" style={{ textDecoration: "none", color: "white" }}>
+                            </AwesomeButton>
+                        </NavLink>
+                        <NavLink to="/test" style={{ textDecoration: "none", color: "white" }}>
+                            <AwesomeButton type="primary" style={{ display: "flex", marginTop: "1vh", width: "100%" }}>
                                 Test Ürünleri
-                            </NavLink>
-                        </AwesomeButton>
+                            </AwesomeButton>
+                        </NavLink>
                     </div>
                     <div className="text-center">
                         <img className="footer " src={denebi3} />

@@ -5,13 +5,16 @@ import emoji from "../assets/emoji.png"
 import üzgün from "../assets/üzgün.png"
 import mutlu from "../assets/mutlu.png"
 import çokmutlu from "../assets/çokmutlu.png"
-
 import { styled } from '@mui/material/styles';
 import Slider, { SliderThumb } from '@mui/material/Slider';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
 export default function KampanyaEkranı() {
 
     const [denebi, setDenebi] = useState(50)
+    const handleChange = (event, newValue) => {
+        setDenebi(newValue);
+    };
 
     const PrettoSlider = styled(Slider)({
         color: '#524091',
@@ -76,8 +79,8 @@ export default function KampanyaEkranı() {
                             <PrettoSlider
                                 valueLabelDisplay="auto"
                                 aria-label="pretto slider"
-                                defaultValue={denebi}
-                                onBlur={e => setDenebi(e.target.value)}
+                                value={denebi}
+                                onChange={handleChange}
                             />
 
                             <span>Kullanıcı Puanı</span>
