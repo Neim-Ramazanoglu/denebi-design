@@ -12,24 +12,28 @@ export default class Sayfa1 extends Component {
     render() {
         return <>
             <div className="row">
-                <div className="col-4 left" >
-                    <div className="col-9" style={{ marginLeft: "8vh" }}>
-                        <div className="row" style={{ height: "40vh" }} >
-                            <img src={denebi} />
+                <div className="col-sm-12 col-md-4 left" >
+                    <div className="col-sm-12 col-md-9 img-container" >
+                        <div className="row denebi-logo"  >
+                            <img src={denebi} className="" />
                         </div>
-                        <div className="row">
-                            <img src={friendly} />
+                        <div className="row friendly-logo">
+                            <img src={friendly} className="" />
                         </div>
+                        <div id="section04" className="demo">
+                            <a href="#main-page"><span></span>Kaydır</a>
+                        </div>
+
                     </div>
                 </div>
-                <div className="col-8 right " >
+                <div className="col-sm-12 col-md-8 right" id="main-page">
                     <div className="header text-center">
                         Merhaba
                     </div>
                     <div className="sub-title text-center">
                         Seni burada gördüğümüz için çok sevindik
                     </div>
-                    <div className="text-center mx-5" style={{ fontSize: "3vh", height: "43vh" }}>
+                    <div className="text-center mx-5 main-text">
                         Hey merhaba, seni aramızda görmekten çok mutlu olduk.
                         Sana hemen kendimizi tanıtmak istiyoruz.
                         Yeni nesil bir dijital reklam ağı olarak senin için
