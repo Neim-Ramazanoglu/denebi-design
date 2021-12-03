@@ -12,24 +12,24 @@ export default class Cekilis extends Component {
     render() {
         return <>
             <div className="row">
-                <div className="col-4 left" >
-                    <div className="col-9" style={{ marginLeft: "8vh" }}>
-                        <div className="row" style={{ height: "40vh" }} >
+                <div className="col-4 left mobil-left" >
+                    <div className="col-9 img-container">
+                        <div className="row denebi-logo">
                             <img src={denebi} />
                         </div>
-                        <div className="row">
+                        <div className="row navi-logo">
                             <img src={navi} />
                         </div>
                     </div>
                 </div>
-                <div className="col-8 right " >
+                <div className="col-sm-12 col-md-8 right mobil-right" >
                     <div className="header text-center">
                         Çekilişler
                     </div>
                     <div className="sub-title text-center">
                         İşletmen için en iyi kampanya stratejisini seçelim
                     </div>
-                    <div className="text-center mx-5" style={{ fontSize: "3vh", height: "30vh" }}>
+                    <div className="text-center text-content">
                         Hey merhaba, seni aramızda görmekten çok mutlu olduk.
                         Sana hemen kendimizi tanıtmak istiyoruz.
                         Yeni nesil bir dijital reklam ağı olarak senin için
@@ -37,16 +37,14 @@ export default class Cekilis extends Component {
                         müşteri getirmek istiyorsan doğru yerdesin.
                     </div>
 
-                    <div className="button-container1 mb-3" >
+                    <div className="button-container1" >
                         <NavLink to="/secim" style={{ textDecoration: "none", color: "white" }}>
-                            <AwesomeButton type="primary" style={{ display: "flex" }}>
+                            <AwesomeButton type="primary" style={{ display: "flex", marginTop: "1vh", width: "100%" }}>
                                 Başka bir seçim dene
                             </AwesomeButton>
                         </NavLink>
-                    </div>
-                    <div className="button-container1" >
                         <NavLink to="/kampanya" style={{ textDecoration: "none", color: "white" }}>
-                            <AwesomeButton type="primary" style={{ display: "flex" }}>
+                            <AwesomeButton type="primary" style={{ display: "flex", marginTop: "1vh", width: "100%" }}>
                                 Kampanya Oluştur
                             </AwesomeButton>
                         </NavLink>

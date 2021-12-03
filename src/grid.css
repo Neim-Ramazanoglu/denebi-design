@@ -141,6 +141,9 @@ margin-top: 15vh;
 .demo{
   display: none;
 }
+.navi-logo{
+  width: 40vh;
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -156,12 +159,12 @@ height: 100vh;
 }
 .header{
     font-size: 7vh;
-    margin-top: 2vh;
-    height: 10vh;
+    margin-top: 4vh;
+    height: 15vh;
 }
 .sub-title{
     font-size: 3vh;
-    height: 13vh;
+    height: 18vh;
     margin-inline: 2vh;
 
 }
@@ -189,7 +192,17 @@ margin-bottom: 10vh;
 .button-container1{
   margin-bottom: 2vh;
 }
-
+.mobil-left{
+  display: none;
+}
+.button-container{
+  margin-top: 10vh;
+}
+.text-content{
+  margin-inline: 3vh;
+  height: 35vh;
+  font-size: 2vh;
+}
 
 /* --------------- scroll down icon -------------- */
 .demo{
@@ -290,18 +303,33 @@ margin-bottom: 10vh;
         color: #524091;
     }
     .img-container{
-      margin-left: 7vh;
+      margin-left: 14vh;
       margin-top: 15vh;
       }
       .friendly-logo{
-        width: 40vh;
+        width: 45vh;
       }
       .denebi-logo{
-        width: 40vh;
-        margin-bottom: 25vh;
+        width: 45vh;
+        margin-bottom: 23vh;
+      }
+      .navi-logo{
+        width: 50vh;
+        margin-left: -3vh;
       }
     .button-container1{
-      margin-bottom: 3vh;
+      margin-bottom: 5vh;
+    }
+    .text-content{
+      height: 30vh;
+      font-size: 3vh;
+      margin-inline:3vh;
+    }
+    .button-container{
+      display: table;
+      margin: 0 auto;
+      padding:1vh;
+      height: 55vh;
     }
 }
 @media only screen and (min-width: 1440px) {
@@ -316,6 +344,25 @@ margin-bottom: 10vh;
         border-top-right-radius: 7vh;
         border-top-left-radius: 7vh;
         color: #524091;
+    }
+    .img-container{
+      margin-left: 12vh;
+      margin-top: 10vh;
+      }
+      .friendly-logo{
+        width: 45vh;
+      }
+      .denebi-logo{
+        width: 45vh;
+        margin-bottom: 25vh;
+      }
+    .button-container1{
+      margin-bottom: 3vh;
+    }
+    .text-content{
+      height: 35vh;
+      font-size: 3vh;
+      margin-inline:2vh;
     }
 
 }

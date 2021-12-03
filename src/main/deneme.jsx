@@ -12,17 +12,17 @@ export default class Deneme extends Component {
     render() {
         return <>
             <div className="row">
-                <div className="col-4 left" >
-                    <div className="col-9" style={{ marginLeft: "8vh" }}>
-                        <div className="row" style={{ height: "40vh" }} >
+                <div className="col-4 left mobil-left" >
+                    <div className="col-9 img-container">
+                        <div className="row denebi-logo">
                             <img src={denebi} />
                         </div>
-                        <div className="row">
+                        <div className="row navi-logo">
                             <img src={navi} />
                         </div>
                     </div>
                 </div>
-                <div className="col-8 right " >
+                <div className="col-sm-12 col-md-8 right mobil-right" >
                     <div className="header text-center">
                         Seçim
                     </div>
