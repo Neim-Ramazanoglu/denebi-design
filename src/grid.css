@@ -144,6 +144,9 @@ margin-top: 15vh;
 .navi-logo{
   width: 40vh;
 }
+.phonescreen{
+ display: none; 
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -270,6 +273,32 @@ margin-bottom: 10vh;
   40% {
     transform: rotate(-45deg) translate(0, 0);
   }
+}
+/* ---------------- Kampanya Ekranı ----------------- */
+.phone{
+  width: 40vh;
+  height:55vh;
+  background-color: white;
+  display: inline-block;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-right-radius: 5vh;
+  border-top-left-radius: 5vh;
+  color: #524091;
+  border: 2px solid #524091;
+}
+
+.not-phone{
+  display: none;
+}
+.emoji{
+  height: 10vh;
+  width: 10vh;
+  margin-top: 1vh;
+}
+.phonescreen{
+display: block;
 }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
